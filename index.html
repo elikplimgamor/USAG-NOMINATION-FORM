@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tween Tech - EdTech Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hero" class="page active">
+        <div class="hero-content">
+            <h1>UNIVERSITY STUDENTS’ ASSOCIATION OF GHANA</h1>
+            <p>We have opened our nomination forms to all prospective aspirants from Tuessday, August 6th, 2024 to Friday, August 16, 2024.</p>
+            <button id="menu-toggle">☰</button>
+        </div>
+    </div>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Usaga form.pdf" download>Download Appointment Form</a></li>
+            <li><a href="#" onclick="showPaymentAlert()">Make Payment</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="page">
+        <h2>About Us</h2>
+        <p>Tween Tech is an innovative edtech company focused on providing quality education through technology. Our mission is to bridge the gap between traditional education and the future of learning.</p>
+    </section>
+    <section id="services" class="page">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Online Courses</h3>
+            <p>Interactive and engaging online courses for kids and teens.</p>
+        </div>
+        <div class="service-card">
+            <h3>Virtual Classrooms</h3>
+            <p>Live virtual classes with experienced educators.</p>
+        </div>
+        <div class="service-card">
+            <h3>Educational Games</h3>
+            <p>Fun and educational games to enhance learning.</p>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('show');
+        });
+
+        function showPaymentAlert() {
+            alert("President: GHC 3000\nOther Portfolios: GHC 2500\n\nAccount Name: University Students' Association of Ghana.\nAccount Number: 2090033858715\nBranch: Fidelity Bank, Ridge Branch");
+        }
+    </script>
+</body>
+</html>
